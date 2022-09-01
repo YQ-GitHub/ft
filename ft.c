@@ -30,16 +30,25 @@
 #define BUFF_PAD 128
 #define MAX_KEY 16
 #define MIN_KEY 6 
-#define ALL_TYPE 0
-#define PERSON_TYPE 1
-#define PERSONINLAW_TYPE 2
 #define CRCLEN 4
-#define UP 0
-#define DOWN 1
-#define PRINTALL      0
-#define PRINTNAMENOTE 1
-#define PRINTNAMESEX  2
-#define PRINTNAMEONLY 3
+
+enum type {
+   ALL_TYPE,
+   PERSON_TYPE,
+   PERSONINLAW_TYPE,
+};
+
+enum movedirection {
+   UP,
+   DOWN,
+};
+
+enum printtype {
+    PRINTALL,
+    PRINTNAMENOTE,
+    PRINTNAMESEX,
+    PRINTNAMEONLY,
+};
 
 typedef struct PersonInLaw {
   ulong id;

@@ -33,21 +33,21 @@
 #define CRCLEN 4
 
 enum type {
-   ALL_TYPE,
-   PERSON_TYPE,
-   PERSONINLAW_TYPE,
+  ALL_TYPE,
+  PERSON_TYPE,
+  PERSONINLAW_TYPE,
 };
 
 enum movedirection {
-   UP,
-   DOWN,
+  UP,
+  DOWN,
 };
 
 enum printtype {
-    PRINTALL,
-    PRINTNAMENOTE,
-    PRINTNAMESEX,
-    PRINTNAMEONLY,
+  PRINTALL,
+  PRINTNAMENOTE,
+  PRINTNAMESEX,
+  PRINTNAMEONLY,
 };
 
 typedef struct PersonInLaw {
